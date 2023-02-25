@@ -76,6 +76,13 @@ body {
     flex-direction: column;
     padding: 55px;
     background-color: #FCF7FF;
+    
+}
+
+.product__page--box {
+    width: 100%;
+    overflow: hidden;
+    
 }
 
 .product__page h1, .customize__title {
@@ -89,11 +96,17 @@ body {
     border-top-right-radius: 20px;
 }
 
-.product__page--img {
+.product__page--box img {
     height: 400px;
     width: 100%;
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.product__page--box img:hover {
+    transform: scale(1.5);
 }
 
 .product__page--sizes, .customize__name {
@@ -320,4 +333,12 @@ body {
     color: #07054d;
     display: block;
     font-weight:600
+}
+
+/* ======================= MEDIA QUERYS START ======================= */
+
+@media only screen and (min-width: 576px) {
+    .product__page, .customize {
+        width: 500px;
+    }
 }
