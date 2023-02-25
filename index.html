@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Title-->
+        <title>Awesone Tshirt | By Pila Gonzalez</title>
+        <meta name="description" content="Descripción" />
+
+        <!-- Favicon-->
+        <link
+            rel="icon"
+            href="https://www.netenders.com/wp-content/uploads/2022/06/netenders-favicon.webp"
+            type="image/x-icon"
+        />
+
+        <!-- Stylesheets CSS-->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <!------------ Google Font ---------->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <!----------- Font Awesome ---------->
+        <script
+            src="https://kit.fontawesome.com/4ce5221f73.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <body>
+
+        <!-- Intro Page-->
+
+        <div class="container product">
+
+            <div class="product__logo">
+                <h3>Test Frondend Developer</h3>
+                <img
+                    src="https://www.netenders.com/wp-content/uploads/2022/06/netenders-logo.webp"
+                    alt="Awesome Tshirt"
+                />
+
+                <h2>By Pila Gonzalez</h2>
+
+                <a href="#productPage"><i class="fa-solid fa-arrow-down-long"></i></a>
+            </div>
+
+            <!--Product Page-->
+
+            <div id="productPage" class="product__page">
+
+                <h1>AWESOME</h1>
+                <img
+                    class="product__page--img"
+                    src="https://www.wordans.de/files/models/2021/11/30/515632/515632_big.jpg?1638258722"
+                    alt="Awesome Tshirt"
+                />
+
+                <p class="product__page--sizes">Sizes: <span>XS, S, M, L & XL</span></p>
+
+                <div class="product__page--options">
+
+                    <p>
+                        COLORS:
+                        <select id="color">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="orange">Orange</option>
+                            <option value="black">Black</option>
+                        </select>
+                    </p>
+
+                    <div class="product__page--options__box">
+                        <span id="redColor" class="outlineColor "data-color="red"></span>
+                        <span id="blueColor" data-color="blue"></span>
+                        <span id="orangeColor" data-color="orange"></span>
+                        <span id="blackColor" data-color="black"></span>
+                    </div>
+
+
+                    <h6>STOCK: <span id="stock">50</span></h6>
+                </div>
+
+                <button class="product__btn" id="customize">Customize</button>
+            </div>
+        </div>
+
+        <!-- Customize Page-->
+
+        <div id="customizePage" class="container customize">
+
+            <h1 class="customize__title">CUSTOMIZE</h1>
+
+            <img
+                class="customize__img"
+                src="https://images.typeform.com/images/CbbrBMiRVHfa/image/default-firstframe.png"
+                alt="Awesome Tshirt"
+            />
+
+            <h3 class="customize__name">GILDAN 5000 <span>&#174</span></h3>
+
+            <form id="customize-form" class="customize__form">
+
+                <div class="customize__form--size">
+                    <label for="size">Size: </label>
+                    <select id="size" name="size">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                    </select>
+                </div>
+
+                <div class="customize__form--quantity">
+                    <button class="quantity-arrow-minus">-</button>
+                    <span id="quantity" class="quantity-num" type="number">1</span>
+                    <button class="quantity-arrow-plus">+</button>
+                </div>
+
+                <p class="discount discount1">Discount 20% Added!!!</p>
+
+                <span id="price">25$</span>
+
+                <button class="customize__form--btn" type="submit">Add to Cart</button>
+
+            </form>
+            
+        </div>
+
+        <!-- JavaScript-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
